@@ -1,0 +1,46 @@
+<% layout("/layouts/boylerplate") %>
+
+<div class="row mt-3">
+    <h1 class="col-6 offset-3">SignUp on Wanderlust</h1>
+    <div class="col-6 offset-3">
+        <form action="/signup" method="post" class="needs-validation" novalidate>
+
+            <div class="mb-3">
+                <label for="username" class="form-label" >Username</label>
+                <input type="text" name="username" placeholder="enter username here" class="form-control" required id="username">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Enter a username
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label" >E-mail</label>
+                <input type="text" name="email" placeholder="enter email-id here" class="form-control" required id="email">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Enter a mail-id
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label" >Password</label>
+                <input type="password" name="password" placeholder="enter password here" class="form-control" required id="password">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Enter password
+                </div>
+            </div>
+
+            <button class="btn btn-success mt-3">Submit</button>
+
+        </form>
+
+    </div>
+</div>        
